@@ -1,0 +1,360 @@
+<!--====================================================================
+  DESENVOLVIDO POR: Denilson Silva Damacena
+  ANO: 2024
+--------------------------------------------------------------------
+⠀⠀⠀⠀⠀⢸⠓⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⠀⠀⠑⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠙⢤⡷⣤⣦⣀⠤⠖⠚⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⡿⠢⢄⡀⠀⡇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠸⠷⣶⠂⠀⠀⠀⣀⣀⠀⠀⠀
+⢸⣃⠀⠀⠉⠳⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⢉⡭⠋
+⠀⠘⣆⠀⠀⠀⠁⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀
+⠀⠀⠘⣦⠆⠀⠀⢀⡎⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⣠⠔⠋⠀⠀⠀⠀
+⠀⠀⠀⡏⠀⠀⣆⠘⣄⠸⢧⠀⠀⠀⠀⢀⣠⠖⢻⠀⠀⠀⣿⢥⣄⣀⣀⣀⠀⠀
+⠀⠀⢸⠁⠀⠀⡏⢣⣌⠙⠚⠀⠀⠠⣖⡛⠀⣠⠏⠀⠀⠀⠇⠀⠀⠀⠀⢙⣣⠄
+⠀⠀⢸⡀⠀⠀⠳⡞⠈⢻⠶⠤⣄⣀⣈⣉⣉⣡⡔⠀⠀⢀⠀⠀⣀⡤⠖⠚⠀⠀
+⠀⠀⡼⣇⠀⠀⠀⠙⠦⣞⡀⠀⢀⡏⠀⢸⣣⠞⠀⠀⠀⡼⠚⠋⠁⠀⠀⠀⠀⠀
+⠀⢰⡇⠙⠀⠀⠀⠀⠀⠀⠉⠙⠚⠒⠚⠉⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢧⡀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⣶⣶⣿⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠀⠀⠀⠙⢿⣳⠞⠳⡄⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠹⣄⣀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+====================================================================-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Todo Mundo Odeia o Chris</title>
+    <link rel="shortcut icon" type="image/png" href="img/todo_mundo_odeia_o_chris_logo.ico" />
+
+    <style>
+        body {
+            background-color: #ffd42d;
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            margin: 20px;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .cabecalho {
+            background-color: #ffd42d;
+            text-align: center;
+        }
+
+        .cabecalho img {
+            width: 1140px;
+            height: 400px;
+        }
+
+        .bg-amarelo {
+            background-color: #ffd42d;
+        }
+
+        .conteudo {
+            background-color: #f2e3c9;
+            vertical-align: top;
+        }
+
+        .menu {
+            background-color: #ccff31;
+            color: #3437f7;
+        }
+
+        #m0 {
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        #m5 {
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        .menu-item:hover {
+            background-color: #b6f200;
+        }
+
+        .link_menu {
+            color: #3437f7;
+        }
+
+        .link_menu:hover {
+            font-size: 20px;
+        }
+
+        .imgmenu:hover {
+            height: 37px;
+            width: 67px;
+        }
+
+        #c1 {
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        #c2 {
+            border-radius: 0px 20px 20px 0px;
+            text-align: center;
+        }
+
+        .titulo1 {
+            color: #3437f7;
+            font-size: 40px;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .titulo1:hover {
+            transform: scale(1.1);
+            text-align: center;
+        }
+
+        .fonte1 {
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 15px auto;
+            width: 90%;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border: 0;
+        }
+
+        .video-credito {
+            text-align: right;
+            padding-right: 20px;
+            font-size: 12px;
+        }
+
+        .proxima_pagina {
+            background-color: #ccff31;
+            border: none;
+            border-radius: 10px;
+            height: 30px;
+            cursor: pointer;
+            padding: 0 15px;
+        }
+
+        .proxima_pagina:hover {
+            background-color: #b6f200;
+        }
+
+        .btn-container-direita {
+            text-align: right;
+        }
+
+        .rodape-img-container {
+            text-align: center;
+        }
+
+        .rodape-img-container img {
+            width: 1300px;
+            height: 400px;
+        }
+
+        .rodape1 {
+            background-color: #ccff31;
+            height: 30px;
+            border-radius: 20px 0px 0px 20px;
+            color: #3437f7;
+            font-size: 20px;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .rodape2 {
+            background-color: #ccff31;
+            height: 100px;
+            border-radius: 0px 20px 20px 0px;
+            padding-left: 15px;
+        }
+
+        .glossario {
+            background-color: #3437f7;
+            border: none;
+            border-radius: 10px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .glossario a {
+            color: #ccff31;
+            padding: 0 10px;
+        }
+
+        .glossario:hover {
+            background-color: #5356f5;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #ffd42d;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            background: #ffd42d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ccff31;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr>
+                <td class="cabecalho" colspan="8">
+                    <a href="index.html" target="_self">
+                        <img src="img/cabecalho.png" alt="cabeçalho: poster todo mundo odeia o chris" />
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <th class="menu" id="m0" width="3%">&nbsp;</th>
+                <th colspan="2" class="menu menu-item" width="23%">
+                    <a href="index.html" target="_self">
+                        <img class="imgmenu" src="img/todo_mundo_odeia_o_chris_logo.png" height="35px" width="65px"
+                            alt="todo mundo odeia o chris logo" />
+                    </a>
+                </th>
+                <th class="menu menu-item" width="23%">
+                    <a class="link_menu" href="personagens.html" target="_self">PERSONAGENS</a>
+                </th>
+                <th class="menu menu-item" width="23%">
+                    <a class="link_menu" href="temporadas.html" target="_self">TEMPORADAS</a>
+                </th>
+                <th colspan="2" class="menu menu-item" width="23%">
+                    <a class="link_menu" href="contato.html" target="_self">CONTATO</a>
+                </th>
+                <th class="menu" id="m5" width="3%">&nbsp;</th>
+            </tr>
+
+            <tr>
+                <td rowspan="5" class="bg-amarelo">&nbsp;</td>
+                <td colspan="6" class="bg-amarelo">&nbsp;</td>
+                <td rowspan="5" class="bg-amarelo">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td class="conteudo" id="c1" colspan="3">
+                    <h1 class="titulo1">TODO MUNDO ODEIA O CHRIS</h1>
+                    <p>Todo Mundo Odeia o Chris <i>(Everybody Hates Chris, nome original da série)</i> conta a vida da
+                        família Rock entre os anos de 1982 a 1987, focando em um membro em especial, Chris Rock. No ano
+                        de 1982, Chris completa 13 anos e muda-se com sua família para Bedford-Stuyvesant (conhecida
+                        como "Bed-Stuy"), no Brooklyn, em Nova Iorque. Lá, Chris vive situações corriqueiras da vida de
+                        um adolescente, tanto em ações em que a história realmente acontece quanto em pensamentos e
+                        conclusions expostas de forma humorística e muitas vezes exageradas.</p>
+                    <p>Chris passa a estudar no Corleone Junior High School, colégio que, com exceção de Chris, só
+                        possui alunos brancos, situação que está sempre a implicitamente o vitimizar durante esse
+                        período do programa. O colégio localiza-se no Brooklyn Beach. Lá, ele passa a ser perseguido e
+                        sofre preconceito de todas as pessoas, principalmente de Joe Caruso. Porém, ele também faz um
+                        amigo, Greg Wulliger, com quem divide as dificuldades desse período.</p>
+                    <p>Ao fim da terceira temporada, Chris forma-se na Corleone junto com Greg e a partir da temporada
+                        seguinte passa a cursar o ensino médio no Tattaglia High School, no Queens, só que com outros
+                        alunos negros além de Chris, inclusive, a estrela do time de futebol americano da escola, Walter
+                        Dickerson. Porém, Greg é inscrito pela sua mãe sem saber na Academia do Bronx, onde se torna
+                        alguém temido. Ainda no início da temporada, Greg é expulso da Academia do Bronx e vai para o
+                        Tattaglia. O colégio tinha como mascote um peixe, o Sleeping Fish, o qual Greg representou
+                        durante um episódio.</p>
+                    <p>A história chega ao fim quando Chris passa a não conseguir mais terminar o ano devido a muitos
+                        atrasos e decide fazer um supletivo, o qual não se sabe o resultado. A série acabou nesse ponto
+                        pois a partir daí a história entraria no período de iniciação da carreira dele como comediante,
+                        o que fugiria do contexto estabelecido desde a primeira temporada, além do fato de que seu pai,
+                        Julius, morreu em 1988, ano que corresponderia ao início da quinta temporada, na vida real,
+                        Julius faleceu devido a uma úlcera.</p>
+                    <br />
+                    <i class="fonte1">(<b>Fonte:</b> <a
+                            href="https://chris.fandom.com/pt-br/wiki/Todo_Mundo_Odeia_o_Chris" target="_blank"
+                            style="color:#3437f7">Fandom</a>)</i>
+                </td>
+
+                <td class="conteudo" id="c2" colspan="3">
+                    <img src="img/chris_fundo_video.png" height="200px" width="300px" alt="chris rock" />
+
+                    <div class="video-container">
+                        <iframe frameborder="0" type="text/html"
+                            src="https://www.dailymotion.com/embed/video/x88q4ut?autoplay=1" allowfullscreen
+                            title="Dailymotion Video Player" allow="autoplay"></iframe>
+                    </div>
+
+                    <img src="img/chris_fundo_video2.png" height="300px" width="300px" alt="chris rock" />
+                    <br />
+
+                    <div class="video-credito">
+                        <i>(<b>Vídeo:</b> <a href="https://www.dailymotion.com/video/x88q4ut" target="_blank"
+                                style="color:#3437f7">Dailymotion</a>)</i>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6" class="bg-amarelo">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td colspan="4" class="bg-amarelo">&nbsp;</td>
+                <td colspan="2" class="bg-amarelo">
+                    <div class="btn-container-direita">
+                        <button class="proxima_pagina">
+                            <a href="personagens.html" target="_self" style="color:#3437f7">próxima página</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6" class="rodape-img-container">
+                    <img src="img/rodape.png" alt="rodapé: familia de chris rock" />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="rodape1" colspan="4">
+                    <b>REDES SOCIAIS</b>
+                </td>
+                <td class="rodape2" colspan="4">
+                    <br />
+                    <a href="https://www.facebook.com/chrissinceroh/" target="_blank"><img src="img/facebook.png"
+                            height="30px" width="30px" alt="facebook logo" /></a>&ensp;
+                    <a href="https://twitter.com/chrissinceroh" target="_blank"><img src="img/twitter.png" height="30px"
+                            width="30px" alt="twitter logo" /></a>&ensp;
+                    <a href="https://www.instagram.com/chrissinceroh/" target="_blank"><img src="img/instagram.png"
+                            height="30px" width="30px" alt="instagram logo" /></a>&ensp;
+                    <a href="https://www.tiktok.com/@chrissinceroh" target="_blank"><img src="img/tiktok.png"
+                            height="30px" width="30px" alt="tiktok logo" /></a>&ensp;
+                    <a href="https://www.youtube.com/@chrissinceroh" target="_blank"><img src="img/youtube.png"
+                            height="30px" width="30px" alt="youtube logo" /></a>
+                    <br /><br />
+                    <button class="glossario">
+                        <a href="glossario.html" target="_blank">Glossário</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

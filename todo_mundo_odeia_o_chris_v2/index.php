@@ -1,0 +1,265 @@
+<?php
+/*
+====================================================================
+  DESENVOLVIDO POR: Denilson Silva Damacena
+  ANO: 2026
+--------------------------------------------------------------------
+⠀⠀⠀⠀⠀⢸⠓⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⠀⠀⠑⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠙⢤⡷⣤⣦⣀⠤⠖⠚⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⡿⠢⢄⡀⠀⡇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠸⠷⣶⠂⠀⠀⠀⣀⣀⠀⠀⠀
+⢸⣃⠀⠀⠉⠳⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⢉⡭⠋
+⠀⠘⣆⠀⠀⠀⠁⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀
+⠀⠀⠘⣦⠆⠀⠀⢀⡎⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⣠⠔⠋⠀⠀⠀⠀
+⠀⠀⠀⡏⠀⠀⣆⠘⣄⠸⢧⠀⠀⠀⠀⢀⣠⠖⢻⠀⠀⠀⣿⢥⣄⣀⣀⣀⠀⠀
+⠀⠀⢸⠁⠀⠀⡏⢣⣌⠙⠚⠀⠀⠠⣖⡛⠀⣠⠏⠀⠀⠀⠇⠀⠀⠀⠀⢙⣣⠄
+⠀⠀⢸⡀⠀⠀⠳⡞⠈⢻⠶⠤⣄⣀⣈⣉⣉⣡⡔⠀⠀⢀⠀⠀⣀⡤⠖⠚⠀⠀
+⠀⠀⡼⣇⠀⠀⠀⠙⠦⣞⡀⠀⢀⡏⠀⢸⣣⠞⠀⠀⠀⡼⠚⠋⠁⠀⠀⠀⠀⠀
+⠀⢰⡇⠙⠀⠀⠀⠀⠀⠀⠉⠙⠚⠒⠚⠉⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢧⡀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⣶⣶⣿⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠀⠀⠀⠙⢿⣳⠞⠳⡄⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠹⣄⣀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+====================================================================
+*/
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Mundo Odeia o Chris</title>
+    <link rel="shortcut icon" type="image/png" href="img/todo_mundo_odeia_o_chris_logo.ico">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="site-container">
+
+    <header class="hero-header">
+        <a href="index.php">
+            <img src="img/cabecalho.png" 
+                 alt="cabeçalho: poster todo mundo odeia o chris">
+        </a>
+    </header>
+
+
+    <nav class="nav">
+
+        <div class="nav-logo">
+            <a href="index.php">
+                <img src="img/todo_mundo_odeia_o_chris_logo.ico"
+                     alt="todo mundo odeia o chris logo">
+            </a>
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.php" class="nav-btn active">
+                Início
+            </a>
+
+            <a href="personagens.php" class="nav-btn">
+                Personagens
+            </a>
+
+            <a href="temporadas.php" class="nav-btn">
+                Temporadas
+            </a>
+
+            <a href="contato.php" class="nav-btn">
+                Contato
+            </a>
+
+        </div>
+
+    </nav>
+
+
+
+    <main class="glass-panel">
+
+
+        <section class="lado-texto">
+
+            <h1>
+                TODO MUNDO ODEIA O CHRIS
+            </h1>
+
+
+            <p>Todo Mundo Odeia o Chris <i>(Everybody Hates Chris, nome original da série)</i> conta a vida da
+                    família Rock entre os anos de 1982 a 1987, focando em um membro em especial, Chris Rock. No ano de
+                    1982, Chris completa 13 anos e muda-se com sua família para Bedford-Stuyvesant (conhecida como
+                    "Bed-Stuy"), no Brooklyn, em Nova Iorque. Lá, Chris vive situações corriqueiras da vida de um
+                    adolescente, tanto em ações em que a história realmente acontece quanto em pensamentos e conclusions
+                    expostas de forma humorística e muitas vezes exageradas.</p>
+                <p>Chris passa a estudar no Corleone Junior High School, colégio que, com exceção de Chris, só possui
+                    alunos brancos, situação que está sempre a implicitamente o vitimizar durante esse período do
+                    programa. O colégio localiza-se no Brooklyn Beach. Lá, ele passa a ser perseguido e sofre
+                    preconceito de todas as pessoas, principalmente de Joe Caruso. Porém, ele também faz um amigo, Greg
+                    Wulliger, com quem divide as dificuldades desse período.</p>
+                <p>Ao fim da terceira temporada, Chris forma-se na Corleone junto com Greg e a partir da temporada
+                    seguinte passa a cursar o ensino médio no Tattaglia High School, no Queens, só que com outros alunos
+                    negros além de Chris, inclusive, a estrela do time de futebol americano da escola, Walter Dickerson.
+                    Porém, Greg é inscrito pela sua mãe sem saber na Academia do Bronx, onde se torna alguém temido.
+                    Ainda no início da temporada, Greg é expulso da Academia do Bronx e vai para o Tattaglia. O colégio
+                    tinha como mascote um peixe, o Sleeping Fish, o qual Greg representou durante um episódio.</p>
+                <p>A história chega ao fim quando Chris passa a não conseguir mais terminar o ano devido a muitos
+                    atrasos e decide fazer um supletivo, o qual não se sabe o resultado. A série acabou nesse ponto pois
+                    a partir daí a história entraria no período de iniciação da carreira dele como comediante, o que
+                    fugiria do contexto estabelecido desde a primeira temporada, além do fato de que seu pai, Julius,
+                    morreu em 1988, ano que corresponderia ao início da quinta temporada, na vida real, Julius faleceu
+                    devido a uma úlcera.</p>
+
+
+            <span class="fonte1">
+
+                (<b>Fonte:</b> 
+                <a href="https://chris.fandom.com/pt-br/wiki/Todo_Mundo_Odeia_o_Chris"
+                   target="_blank">
+                    Fandom
+                </a>)
+
+            </span>
+
+
+        </section>
+
+
+
+
+       <section class="lado-midia">
+
+    <img src="img/fundo_video.jpg"
+         class="imagem-fundo-video"
+         alt="">
+
+
+    <div class="video-wrapper">
+
+        <iframe 
+            frameborder="0"
+            src="https://www.dailymotion.com/embed/video/x88q4ut?autoplay=1"
+            allowfullscreen
+            title="Dailymotion Video Player">
+        </iframe>
+
+    </div>
+
+
+    <div class="video-credito">
+
+        (<b>Vídeo:</b>
+        <a href="https://www.dailymotion.com/video/x88q4ut"
+           target="_blank">
+            Dailymotion
+        </a>)
+
+    </div>
+
+
+</section>
+
+
+    </main>
+
+
+
+
+    <div class="control-footer">
+
+        <div></div>
+
+        <a href="personagens.php" class="btn-action">
+            Próxima página →
+        </a>
+
+    </div>
+
+
+
+
+    <footer class="footer-moderno">
+
+
+        <img src="img/rodape.png"
+             class="footer-banner"
+             alt="família de Chris Rock">
+
+
+
+        <div class="social-grid">
+
+
+            <a href="https://www.facebook.com/chrissinceroh/"
+               target="_blank"
+               class="social-icon">
+
+                <img src="img/facebook.png"
+                     alt="Facebook">
+
+            </a>
+
+
+
+            <a href="https://twitter.com/chrissinceroh"
+               target="_blank"
+               class="social-icon">
+
+                <img src="img/twitter.png"
+                     alt="Twitter">
+
+            </a>
+
+
+
+            <a href="https://www.instagram.com/chrissinceroh/"
+               target="_blank"
+               class="social-icon">
+
+                <img src="img/instagram.png"
+                     alt="Instagram">
+
+            </a>
+
+
+
+            <a href="https://www.tiktok.com/@chrissinceroh"
+               target="_blank"
+               class="social-icon">
+
+                <img src="img/tiktok.png"
+                     alt="TikTok">
+
+            </a>
+
+
+
+            <a href="https://www.youtube.com/@chrissinceroh"
+               target="_blank"
+               class="social-icon">
+
+                <img src="img/youtube.png"
+                     alt="Youtube">
+
+            </a>
+
+
+        </div>
+
+        <button class="btn-glossario">
+
+            <a href="glossario.php">
+                Glossário
+            </a>
+
+        </button>
+
+    </footer>
+</div>
+
+</body>
+
+</html>

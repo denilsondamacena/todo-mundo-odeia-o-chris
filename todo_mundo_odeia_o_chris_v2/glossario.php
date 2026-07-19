@@ -1,0 +1,412 @@
+<?php
+/*
+====================================================================
+  DESENVOLVIDO POR: Denilson Silva Damacena
+  ANO: 2026
+--------------------------------------------------------------------
+⠀⠀⠀⠀⠀⢸⠓⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⠀⠀⠑⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠙⢤⡷⣤⣦⣀⠤⠖⠚⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⡿⠢⢄⡀⠀⡇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠸⠷⣶⠂⠀⠀⠀⣀⣀⠀⠀⠀
+⢸⣃⠀⠀⠉⠳⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⢉⡭⠋
+⠀⠘⣆⠀⠀⠀⠁⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀
+⠀⠀⠘⣦⠆⠀⠀⢀⡎⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⣠⠔⠋⠀⠀⠀⠀
+⠀⠀⠀⡏⠀⠀⣆⠘⣄⠸⢧⠀⠀⠀⠀⢀⣠⠖⢻⠀⠀⠀⣿⢥⣄⣀⣀⣀⠀⠀
+⠀⠀⢸⠁⠀⠀⡏⢣⣌⠙⠚⠀⠀⠠⣖⡛⠀⣠⠏⠀⠀⠀⠇⠀⠀⠀⠀⢙⣣⠄
+⠀⠀⢸⡀⠀⠀⠳⡞⠈⢻⠶⠤⣄⣀⣈⣉⣉⣡⡔⠀⠀⢀⠀⠀⣀⡤⠖⠚⠀⠀
+⠀⠀⡼⣇⠀⠀⠀⠙⠦⣞⡀⠀⢀⡏⠀⢸⣣⠞⠀⠀⠀⡼⠚⠋⠁⠀⠀⠀⠀⠀
+⠀⢰⡇⠙⠀⠀⠀⠀⠀⠀⠉⠙⠚⠒⠚⠉⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢧⡀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⣶⣶⣿⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠀⠀⠀⠙⢿⣳⠞⠳⡄⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠹⣄⣀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+====================================================================
+*/
+?>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Mundo Odeia o Chris - Glossário</title>
+    <link rel="shortcut icon" type="image/png" href="img/todo_mundo_odeia_o_chris_logo.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="site-container">
+
+        <header class="hero-header">
+            <a href="index.php">
+                <img src="img/cabecalho.png" alt="cabeçalho: poster todo mundo odeia o chris" />
+            </a>
+        </header>
+
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.php">
+                    <img src="img/todo_mundo_odeia_o_chris_logo.png" alt="todo mundo odeia o chris logo" />
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.php" class="nav-btn">Início</a>
+                <a href="personagens.php" class="nav-btn">Personagens</a>
+                <a href="temporadas.php" class="nav-btn">Temporadas</a>
+                <a href="contato.php" class="nav-btn">Contato</a>
+            </div>
+        </nav>
+
+        <div class="section-banner-panel">
+            <img src="img/foto_glossario.png" style="height: 200px; width: auto;" alt="familia rock" />
+            <img src="img/tags.png" style="height: 80px; width: auto;" alt="palavra tags" />
+        </div>
+
+        <main class="glass-panel">
+
+            <h1>TAGS UTILIZADAS NÃO APRENDIDAS EM AULA E SUAS FUNCIONALIDADES</h1>
+            <br />
+
+            <ul class="lista-glossario">
+                <li>
+                    <b>&lt;link rel="shortcut icon" type="image/png" href="imagem.ico"/&gt;</b><br /><br />
+                    O elemento <b>&lt;link&gt;</b> é utilizado para vincular conteúdos de outros arquivos na página de
+                    código HTML. Ele deve ser inserido entre as tags &lt;head&gt; &lt;/head&gt; da página.
+                    O atributo <b>rel</b> define o relacionamento entre a página atual e o recurso vinculado.
+                    O <b>rel="shortcut icon"</b> é o valor que define o ícone ou favicon da página da web que representa
+                    visualmente o site.
+                    A URL do ícone é especificada no atributo <b>href</b>.
+                    A extensão <b>“ico”</b> contém um ícone, que normalmente é usado para um programa, arquivo ou
+                    pasta.<br /><br />
+                    <i>(<b>Fontes:</b> <a href="https://blog.betrybe.com/html/link-html/" target="_blank">Blog
+                            Betrybe</a> e <a href="https://www.dofactory.com/html/rel/icon"
+                            target="_blank">Dofactory</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;style&gt; a { text-decoration: none; } &lt;/style&gt;</b><br /><br />
+                    O elemento HTML <b>&lt;style&gt;</b> contém informações de estilo para um documento ou uma parte do
+                    documento. As informações de estilo específico estão contidas dentro deste elemento, geralmente no
+                    CSS. A propriedade <b>text-decoration</b> do CSS é usada para definir a formatação de underline,
+                    overline, line-through ou blink. As decorações underline e overline são posicionadas abaixo e acima
+                    do texto (respectivamente), e line-through cortando-o. Quando utilizamos display: <b>none</b>,
+                    estamos dizendo que o elemento não deve ser exibido na página, ou seja, ele fica invisível e não
+                    ocupa espaço.<br /><br />
+                    <i>(<b>Fontes:</b> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/style"
+                            target="_blank">Developer</a>, <a
+                            href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/text-decoration"
+                            target="_blank">Developer (text-decoration)</a> e <a
+                            href="https://www.maujor.com/tutorial/leitores-de-tela-display-none.php"
+                            target="_blank">Maujor</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;div style="text-align:right"&gt; &lt;/div&gt;</b><br /><br />
+                    A tag <b>&lt;div&gt;</b> é utilizada para agrupar e delimitar conteúdos e para isso esses conteúdos
+                    devem ser declarados entre a tag de início e a tag de fechamento
+                    (<b>&lt;div&gt;&lt;/div&gt;</b>).<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.devmedia.com.br/html-div-aprenda-como-utilizar-a-tag-div-para-agrupar-outros-elementos/43503"
+                            target="_blank">DevMedia</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;iframe&gt; &lt;/iframe&gt;</b><br /><br />
+                    É uma tag utilizada para inserir conteúdos externos em uma página.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://rockcontent.com/br/blog/iframe/"
+                            target="_blank">RockContent</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;button&gt; &lt;/button&gt;</b><br /><br />
+                    Criar um botão clicável, onde você pode colocar conteúdo, como texto ou imagens.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://www.homehost.com.br/blog/tutoriais/html-buttton/"
+                            target="_blank">Homehost</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;blockquote&gt; &lt;/blockquote&gt;</b><br /><br />
+                    O Elemento HTML &lt;blockquote&gt; (ou Elemento HTML de citação de bloco) indica que o texto
+                    incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo. A URL para a
+                    fonte da citação pode ser dada usando o atributo cite, enquanto uma representação de texto da fonte
+                    pode ser dada usando o elemento <b>cite</b>. Um atributo de <b>class</b> especifica características
+                    de um elemento HTML. Uma classe pode ser usada por um CSS ou Javascript (através do Document Object
+                    Model, ou DOM) para realizar determinadas tarefas ou atributos em um elemento com esta classe.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote"
+                            target="_blank">Developer</a> e <a href="https://portaldesenvolvedor.com/html/classes/"
+                            target="_blank">Portal Desenvolvedor</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;section&gt; &lt;/section&gt;</b><br /><br />
+                    A tag <b>&lt;section&gt;</b> é utilizada para marcar as seções de conteúdo de uma página. Com esse
+                    elemento agrupamos de forma lógica nosso conteúdo, separando a informação em áreas diferentes.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.portalinsights.com.br/perguntas-frequentes/quando-devo-usar-a-tag-section#google_vignette"
+                            target="_blank">Portal Insights</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;label&gt; &lt;/label&gt;</b><br /><br />
+                    A tag <b>&lt;label&gt;</b> é um elemento HTML que representa uma legenda para melhorar a
+                    acessibilidade de um item de interface do usuário. Este elemento também é conhecido como controle ou
+                    rótulo e pode ser associado a outro elemento de controle através de um atributo.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.devmedia.com.br/html-label-aplicando-rotulos-com-o-uso-da-tag-label/43492"
+                            target="_blank">DevMedia</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;input.../&gt;</b><br /><br />
+                    A tag <b>&lt;input&gt;</b> cria diferentes campos de entrada de dados no documento HTML. No geral,
+                    <b>&lt;input&gt;</b> deve ser usada dentro da tag &lt;form&gt;, para que possa passar os dados
+                    coletados para algum outro documento através dos processos nativos de <b>&lt;form&gt;</b>.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://www.ranoya.com/books/public/html/tag-input.php?embed=plain"
+                            target="_blank">Ranoya</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;textarea&gt; &lt;/textarea&gt;</b><br /><br />
+                    Cria uma caixa de texto. Através da caixa de texto podemos permitir ao usuário digitar textos
+                    maiores, como uma mensagem em um formulário de contato, por exemplo.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.devmedia.com.br/html-textarea-criando-caixas-de-texto-no-html/43499"
+                            target="_blank">DevMedia</a>)</i><br />
+                </li>
+            </ul>
+
+            <h1>ATRIBUTOS UTILIZADOS NÃO APRENDIDAS EM AULA E SUAS FUNCIONALIDADES</h1>
+            <br />
+
+            <ul class="lista-glossario">
+                <li>
+                    <b>&lt;a href="personagens.php" style="color:#3437f7" target="_self"&gt; &lt;/a&gt;</b><br /><br />
+                    O atributo style serve para definir o modelo e cor do texto, no trabalho foi utilizado o
+                    style="color" para definir a cor do texto no link.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://pt.stackoverflow.com/questions/14245/como-mudar-a-cor-de-um-%C3%BAnico-link"
+                            target="_blank">StackOverflow</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;div style=" "&gt; &lt;/div&gt;</b><br /><br />
+                    Para definir o modelo de estilização da tag <b>&lt;div&gt;</b>.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://www.dofactory.com/html/div/style"
+                            target="_blank">Dofactory</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>position:</b><br /><br />
+                    Para definir a posição do elemento. Foram utilizados <b>position:relative</b> que posiciona o
+                    elemento em relação a si mesmo, e <b>position:absolute</b> que faz o elemento ter sua posição
+                    relacionada à de seu elemento pai.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/position"
+                            target="_blank">Developer (position)</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>padding-bottom</b><br /><br />
+                    Define as dimensões do espaçamento interno inferior (distância do elemento para sua própria
+                    borda).<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://www.ranoya.com/books/public/css/css-padding-bottom.php"
+                            target="_blank">Ranoya</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>overflow</b><br /><br />
+                    Especifica quando o conteúdo de um elemento deve ser cortado, exibido com barras de rolagem ou se
+                    transborda do elemento.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/overflow"
+                            target="_blank">Developer (overflow)</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>hidden</b><br /><br />
+                    Torna o elemento oculto para os mecanismos de pesquisa tornando-o invisível.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://pt.semrush.com/blog/ocultar-elemento-html/"
+                            target="_blank">Semrush</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>frameborder</b><br /><br />
+                    É usado para especificar se uma borda deve ou não ser exibida entre os frames, utilizando dois
+                    valores: 0 e 1.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.portalinsights.com.br/perguntas-frequentes/qual-a-diferenca-entre-frame-e-iframe"
+                            target="_blank">Portal Insights</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>allowfullscreen</b><br /><br />
+                    Este atributo dá a permissão de utilizar o &lt;iframe&gt; em tela cheia.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://blog.betrybe.com/html/iframe-html/" target="_blank">Blog
+                            Betrybe</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>allow</b><br /><br />
+                    Permite ativar ou desativar um recurso.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe"
+                            target="_blank">Developer</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>autoplay</b><br /><br />
+                    Permite que o conteúdo seja inicializado sem a necessidade de clicar em play ou no elemento.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://www.devmedia.com.br/html5-as-tags-audio-e-video/26018"
+                            target="_blank">DevMedia</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;font face=" "&gt; &lt;/font&gt;</b><br /><br />
+                    Para alterar o tipo de fonte.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.htmlprogressivo.net/2013/08/font-tag-Como-alterar-a-fonte-tamanho-e-cor-de-textos-de-um-website.html"
+                            target="_blank">HTML Progressivo</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;font size=" "&gt; &lt;/font&gt;</b><br /><br />
+                    Para alterar o tamanho da fonte.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.htmlprogressivo.net/2013/08/font-tag-Como-alterar-a-fonte-tamanho-e-cor-de-textos-de-um-website.html"
+                            target="_blank">HTML Progressivo</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>&lt;font color=" "&gt; &lt;/font&gt;</b><br /><br />
+                    Para alterar a cor da fonte.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.htmlprogressivo.net/2013/08/font-tag-Como-alterar-a-fonte-tamanho-e-cor-de-textos-de-um-website.html"
+                            target="_blank">HTML Progressivo</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>valign</b><br /><br />
+                    Indica o alinhamento vertical dentro das células de uma linha. Pode ser superior
+                    <b>valign="top"</b>, ou inferior <b>valign="bottom"</b>.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="http://www.fundacaobradesco.org.br/vv-apostilas/cursoHTML/Tabelas.html"
+                            target="_blank">Fundação Bradesco</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>loading="lazy"</b><br /><br />
+                    Pode ser usado para instruir o navegador a adiar o carregamento de imagens/iframes que estão fora da
+                    tela até que o usuário role perto deles. Isso permite carregar recursos não críticos somente se
+                    necessário.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading"
+                            target="_blank">Developer</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>referrerpolicy="no-referrer-when-downgrade"</b><br /><br />
+                    O atributo referrerpolicy HTML especifica a quantidade de informações de referência que seriam
+                    enviadas ao servidor. O valor <b>no-referrer-when-downgrade</b> indica que o cabeçalho de referência
+                    não será enviado às origens sem HTTPS.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://acervolima.com/atributo-de-politica-de-referencia-html/"
+                            target="_blank">Acervo Lima</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>placeholder</b><br /><br />
+                    O <b>placeholder</b> insere, dentro do input, um texto temporário que será apagado quando o usuário
+                    começar a digitar no campo.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.devmedia.com.br/placeholder-em-html5-texto-padrao-de-input/24503"
+                            target="_blank">DevMedia</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>required</b><br /><br />
+                    Quando presente, especifica que um campo de entrada deve ser obrigatoriamente preenchido antes do
+                    envio do formulário.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://www.w3schools.com/tags/att_input_required.asp"
+                            target="_blank">W3Schools</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>onclick</b><br /><br />
+                    O evento <b>onclick</b> executa determinada funcionalidade programada quando um elemento (como um
+                    botão) é clicado.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.freecodecamp.org/portuguese/news/tutorial-sobre-button-onclick-em-html-e-evento-de-clique-em-javascript/"
+                            target="_blank">FreeCodeCamp</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>transform: scale</b><br /><br />
+                    Utilizado para redimensionar os elementos, tendo como escala padrão 1. Valores maiores que 1
+                    aumentarão o tamanho do elemento, e valores menores diminuirão sua escala.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://www.redspark.io/entendendo-a-propriedade-transform-no-css/"
+                            target="_blank">RedSpark</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>::-webkit-scrollbar</b><br /><br />
+                    O pseudoelemento webkit-scrollbar faz parte do CSS e serve para personalizar toda a barra de rolagem
+                    de elementos e navegadores.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.iqem.com.br/personalizando-a-barra-de-rolagem-scrollbar-no-wordpress-elementor-e-html/"
+                            target="_blank">ISSO Marketing</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>::-webkit-scrollbar-track</b><br /><br />
+                    O webkit-scrollbar-track dá a opção de personalizar a faixa de fundo por onde a barra de rolagem
+                    corre.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.iqem.com.br/personalizando-a-barra-de-rolagem-scrollbar-no-wordpress-elementor-e-html/"
+                            target="_blank">ISSO Marketing</a>)</i><br />
+                </li>
+
+                <li>
+                    <b>::-webkit-scrollbar-thumb</b><br /><br />
+                    Com o webkit-scrollbar-thumb você tem a opção de personalizar a alça de rolagem arrastável em
+                    si.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://www.iqem.com.br/personalizando-a-barra-de-rolagem-scrollbar-no-wordpress-elementor-e-html/"
+                            target="_blank">ISSO Marketing</a>)</i><br />
+                </li>
+
+                <li>
+                    <img src="img/espaco1.png" alt="código para adicionar dois espaços em branco em html" height="15px"
+                        width="55px" /><br /><br />
+                    Utilizado para colocar dois espaços em branco consecutivos no texto HTML.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://pt.wikihow.com/Inserir-Espa%C3%A7os-no-HTML"
+                            target="_blank">WikiHow</a>)</i><br />
+                </li>
+
+                <li>
+                    <img src="img/espaco2.png" alt="código para adicionar quatro espaços em branco em html"
+                        height="15px" width="55px" /><br /><br />
+                    Utilizado para colocar quatro espaços em branco consecutivos no texto HTML.<br /><br />
+                    <i>(<b>Fonte:</b> <a href="https://pt.wikihow.com/Inserir-Espa%C3%A7os-no-HTML"
+                            target="_blank">WikiHow</a>)</i><br />
+                </li>
+
+                <li>
+                    <img src="img/tagemtexto.png" alt="tags HTML em texto puro" height="20px" width="270px" /><br /><br />
+                    Exibe os caracteres das tags como texto puro na tela sem que o navegador as interprete como código
+                    executável.<br /><br />
+                    <i>(<b>Fonte:</b> <a
+                            href="https://bruno.art.br/blog/escrever-tags-html-em-texto-puro-para-exibir-em-qualquer-lugar-do-site/"
+                            target="_blank">Bruno.Art</a>)</i><br />
+                </li>
+            </ul>
+        </main>
+
+        <footer class="footer-moderno">
+            <img src="img/rodape.png" class="footer-banner" alt="rodapé: familia de chris rock" />
+
+            <button class="btn-inicio-projeto">
+                <a href="index.php">Voltar ao início do projeto</a>
+            </button>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

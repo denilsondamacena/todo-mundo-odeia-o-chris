@@ -1,0 +1,439 @@
+<!--====================================================================
+  DESENVOLVIDO POR: Denilson Silva Damacena
+  ANO: 2024
+--------------------------------------------------------------------
+⠀⠀⠀⠀⠀⢸⠓⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⠀⠀⠑⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠙⢤⡷⣤⣦⣀⠤⠖⠚⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⡿⠢⢄⡀⠀⡇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠸⠷⣶⠂⠀⠀⠀⣀⣀⠀⠀⠀
+⢸⣃⠀⠀⠉⠳⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⢉⡭⠋
+⠀⠘⣆⠀⠀⠀⠁⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀
+⠀⠀⠘⣦⠆⠀⠀⢀⡎⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⣠⠔⠋⠀⠀⠀⠀
+⠀⠀⠀⡏⠀⠀⣆⠘⣄⠸⢧⠀⠀⠀⠀⢀⣠⠖⢻⠀⠀⠀⣿⢥⣄⣀⣀⣀⠀⠀
+⠀⠀⢸⠁⠀⠀⡏⢣⣌⠙⠚⠀⠀⠠⣖⡛⠀⣠⠏⠀⠀⠀⠇⠀⠀⠀⠀⢙⣣⠄
+⠀⠀⢸⡀⠀⠀⠳⡞⠈⢻⠶⠤⣄⣀⣈⣉⣉⣡⡔⠀⠀⢀⠀⠀⣀⡤⠖⠚⠀⠀
+⠀⠀⡼⣇⠀⠀⠀⠙⠦⣞⡀⠀⢀⡏⠀⢸⣣⠞⠀⠀⠀⡼⠚⠋⠁⠀⠀⠀⠀⠀
+⠀⢰⡇⠙⠀⠀⠀⠀⠀⠀⠉⠙⠚⠒⠚⠉⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢧⡀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⣶⣶⣿⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠀⠀⠀⠙⢿⣳⠞⠳⡄⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠹⣄⣀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+====================================================================-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Todo Mundo Odeia o Chris - Contato</title>
+	<link rel="shortcut icon" type="image/png" href="img/todo_mundo_odeia_o_chris_logo.ico" />
+
+	<style>
+		body {
+			background: #ffd42d;
+			font-family: Helvetica, Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		h1 {
+			font-size: 30px;
+			color: #3437f7;
+			text-align: center;
+		}
+
+		.cabecalho {
+			background-color: #ffd42d;
+			text-align: center;
+		}
+
+		.cabecalho img {
+			width: 1140px;
+			height: 400px;
+		}
+
+		.bg-amarelo {
+			background-color: #ffd42d;
+		}
+
+		.bg-creme {
+			background-color: #f2e3c9;
+		}
+
+		.menu {
+			background-color: #ccff31;
+			color: #3437f7;
+		}
+
+		#m0 {
+			border-radius: 20px 0px 0px 20px;
+		}
+
+		#m5 {
+			border-radius: 0px 20px 20px 0px;
+		}
+
+		.menu-item:hover {
+			background-color: #b6f200;
+		}
+
+		.link_menu {
+			color: #3437f7;
+		}
+
+		.link_menu:hover {
+			font-size: 20px;
+		}
+
+		.imgmenu:hover {
+			height: 37px;
+			width: 67px;
+		}
+
+		.foto {
+			background-color: #f2e3c9;
+			text-align: center;
+		}
+
+		#f1 {
+			border-radius: 20px 0px 0px 20px;
+		}
+
+		#f2 {
+			border-radius: 0px 20px 20px 0px;
+		}
+
+		.borda1 {
+			background-color: #f2e3c9;
+			border-radius: 20px 0px 0px 0px;
+		}
+
+		.borda2 {
+			background-color: #f2e3c9;
+			border-radius: 0px 20px 0px 0px;
+		}
+
+		.borda3 {
+			background-color: #f2e3c9;
+			border-radius: 0px 0px 0px 20px;
+		}
+
+		.borda4 {
+			background-color: #f2e3c9;
+			border-radius: 0px 0px 20px 0px;
+		}
+
+		form {
+			padding: 10px;
+		}
+
+		label {
+			text-align: left;
+			display: inline-block;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"],
+		input[type="tel"],
+		input[type="email"],
+		textarea {
+			text-align: left;
+			width: 90%;
+			margin-bottom: 15px;
+			padding: 5px;
+		}
+
+		.enviar {
+			background-color: #ccff31;
+			border: none;
+			border-radius: 10px;
+			height: 30px;
+			padding: 0 20px;
+		}
+
+		.enviar:hover {
+			background-color: #b6f200;
+			cursor: pointer;
+		}
+
+		.imgan:hover {
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+
+		.mapa-container {
+			text-align: center;
+		}
+
+		.info-local {
+			text-align: center;
+		}
+
+		.info-local h3 {
+			color: #3437f7;
+			margin-bottom: 5px;
+		}
+
+		.pagina_anterior,
+		.inicio {
+			background-color: #ccff31;
+			border: none;
+			border-radius: 10px;
+			height: 30px;
+			cursor: pointer;
+		}
+
+		.pagina_anterior:hover,
+		.inicio:hover {
+			background-color: #b6f200;
+		}
+
+		.btn-container-esquerda {
+			text-align: left;
+		}
+
+		.rodape-img-container {
+			text-align: center;
+		}
+
+		.rodape-img-container img {
+			width: 1300px;
+			height: 400px;
+		}
+
+		.rodape1 {
+			background-color: #ccff31;
+			height: 30px;
+			border-radius: 20px 0px 0px 20px;
+			color: #3437f7;
+			font-size: 20px;
+			text-align: right;
+			padding-right: 15px;
+		}
+
+		.rodape2 {
+			background-color: #ccff31;
+			height: 100px;
+			border-radius: 0px 20px 20px 0px;
+			padding-left: 15px;
+		}
+
+		.glossario {
+			background-color: #3437f7;
+			border: none;
+			border-radius: 10px;
+			height: 30px;
+			cursor: pointer;
+		}
+
+		.glossario:hover {
+			background-color: #5356f5;
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: #ffd42d;
+		}
+
+		::-webkit-scrollbar {
+			width: 10px;
+			background: #ffd42d;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: #ccff31;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<table width="100%" border="0" cellpadding="5" cellspacing="0">
+			<tr>
+				<td class="cabecalho" colspan="8">
+					<a href="index.html" target="_self">
+						<img src="img/cabecalho.png" alt="cabeçalho: poster todo mundo odeia o chris" />
+					</a>
+				</td>
+			</tr>
+
+			<tr>
+				<th class="menu" id="m0" width="1%">&nbsp;</th>
+				<th colspan="2" class="menu menu-item" width="23%">
+					<a href="index.html" target="_self">
+						<img class="imgmenu" src="img/todo_mundo_odeia_o_chris_logo.png" height="35px" width="65px"
+							alt="todo mundo odeia o chris logo" />
+					</a>
+				</th>
+				<th class="menu menu-item" width="23%">
+					<a class="link_menu" href="personagens.html" target="_self">PERSONAGENS</a>
+				</th>
+				<th class="menu menu-item" width="23%">
+					<a class="link_menu" href="temporadas.html" target="_self">TEMPORADAS</a>
+				</th>
+				<th class="menu menu-item" colspan="2" width="23%">
+					<a class="link_menu" href="contato.html" target="_self">CONTATO</a>
+				</th>
+				<th class="menu" id="m5" width="1%">&nbsp;</th>
+			</tr>
+
+			<tr>
+				<td rowspan="11" class="bg-amarelo">&nbsp;</td>
+				<td colspan="6" class="bg-amarelo">&nbsp;</td>
+				<td rowspan="11" class="bg-amarelo">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="foto" id="f1" colspan="3">
+					<img src="img/chris_telefone.png" height="320px" width="420px" alt="Chris no telefone"
+						style="float: right;" />
+				</td>
+				<td class="foto" id="f2" colspan="3">
+					<img src="img/contato.png" height="80px" width="420px" alt="palavra contato" style="float: left;" />
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="6" class="bg-amarelo">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="borda1">&nbsp;</td>
+				<td colspan="2" rowspan="3" class="bg-creme mapa-container">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91359.18993336933!2d-73.95569523215687!3d40.701717485652516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c75b6a8b821%3A0xf3bc87276691ebdc!2sBedford-Stuyvesant%2C%20Brooklyn%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1712671848384!5m2!1spt-BR!2sbr"
+						width="400" height="700" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</td>
+				<td class="bg-creme">
+					<h1>ENTRE EM CONTATO PARA TER DOIS EMPREGOS</h1>
+				</td>
+				<td class="borda2" colspan="2">
+					<form name="meu_form">
+						<label for="nomeid"><b>Nome</b></label><br />
+						<input type="text" id="nomeid" placeholder="Digite seu nome completo" required="required"
+							name="nome" /><br />
+
+						<label for="foneid"><b>Telefone</b></label><br />
+						<input type="tel" id="foneid" placeholder="(xx)xxxxx-xxxx" name="fone" /><br />
+
+						<label for="emailid"><b>E-mail</b></label><br />
+						<input type="email" id="emailid" placeholder="escreva@mail.com" name="email" /><br />
+
+						<textarea placeholder="Mensagem" rows="4"></textarea><br />
+
+						<input class="enviar" type="submit" onclick="Enviar();" value="Enviar" />
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td class="bg-creme">&nbsp;</td>
+				<td colspan="3" class="bg-creme">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="borda3">&nbsp;</td>
+				<td class="bg-creme info-local">
+					<img src="img/local.png" height="30px" width="30px" alt="localização icone" /><br />
+					<h3>EVERYBODY HATES CHRIS</h3>
+					<b>1985 Bedford-Stuyvesant</b> <i>(Bed-Stuy)</i>,<br />
+					Brooklyn, NY, EUA<br />
+					<b>TEL:</b> (88) 2005-2008<br />
+					<b>E-mail:</b> ocarinhaquemoralogoali@mail.com
+				</td>
+				<td class="bg-creme" style="text-align: center;">
+					<img src="img/rochelle_dirigindo.gif" height="200px" width="300px" alt="Rochelle dirigindo" /><br />
+					<span style="font-size: 12px;"><b>Fonte:</b> <a
+							href="https://pettycentral.tumblr.com/post/169903121401" target="_blank"
+							style="color:#3437f7">Tumblr</a></span>
+				</td>
+				<td class="borda4">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td colspan="6" class="bg-amarelo">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="borda1">&nbsp;</td>
+				<td class="bg-creme" style="text-align: center;"><br /><img class="imgan" src="img/perfil.png"
+						height="100px" width="100px" alt="perfil icone" /></td>
+				<td colspan="2" class="bg-creme" style="text-align: center;"><br /><img class="imgan"
+						src="img/perfil.png" height="100px" width="100px" alt="perfil icone" /></td>
+				<td class="bg-creme" style="text-align: center;"><br /><img class="imgan" src="img/perfil.png"
+						height="100px" width="100px" alt="perfil icone" /></td>
+				<td class="borda2">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="borda3">&nbsp;</td>
+				<td class="bg-creme" style="text-align: center;">
+					<span style="color: #3437f7; font-size: 16px;"><b>Antônio Flávio Alencar Arruda</b></span><br />
+					<span style="font-size: 12px;"><b>RGM</b> 31346511</span>
+				</td>
+				<td colspan="2" class="bg-creme" style="text-align: center;">
+					<span style="color: #3437f7; font-size: 16px;"><b>Denilson Silva Damacena</b></span><br />
+					<span style="font-size: 12px;"><b>RGM</b> 31053050</span>
+				</td>
+				<td class="bg-creme" style="text-align: center;">
+					<span style="color: #3437f7; font-size: 16px;"><b>Lucas Emanuel Américo da Silva</b></span><br />
+					<span style="font-size: 12px;"><b>RGM</b> 31704433</span>
+				</td>
+				<td class="borda4">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td colspan="6" class="bg-amarelo">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" class="bg-amarelo">
+					<button class="pagina_anterior">
+						<a href="temporadas.html" target="_self" style="color:#3437f7">página anterior</a>
+					</button>
+				</td>
+				<td class="bg-amarelo" width="316px">&nbsp;</td>
+				<td class="bg-amarelo">
+					<div class="btn-container-esquerda">
+						<button class="inicio">
+							<a href="index.html" target="_self" style="color:#3437f7">início</a>
+						</button>
+					</div>
+				</td>
+				<td colspan="2" class="bg-amarelo" width="316px">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td colspan="8" class="rodape-img-container">
+					<img src="img/rodape.png" alt="rodapé: familia de chris rock" />
+				</td>
+			</tr>
+
+			<tr>
+				<td class="rodape1" colspan="4">
+					<b>REDES SOCIAIS</b>
+				</td>
+				<td class="rodape2" colspan="4">
+					<a href="https://www.facebook.com/chrissinceroh/" target="_blank"><img src="img/facebook.png"
+							height="30px" width="30px" alt="facebook logo" /></a>&ensp;
+					<a href="https://twitter.com/chrissinceroh" target="_blank"><img src="img/twitter.png" height="30px"
+							width="30px" alt="twitter logo" /></a>&ensp;
+					<a href="https://www.instagram.com/chrissinceroh/" target="_blank"><img src="img/instagram.png"
+							height="30px" width="30px" alt="instagram logo" /></a>&ensp;
+					<a href="https://www.tiktok.com/@chrissinceroh" target="_blank"><img src="img/tiktok.png"
+							height="30px" width="30px" alt="tiktok logo" /></a>&ensp;
+					<a href="https://www.youtube.com/@chrissinceroh" target="_blank"><img src="img/youtube.png"
+							height="30px" width="30px" alt="youtube logo" /></a>
+					<br /><br />
+					<button class="glossario">
+						<a href="glossario.html" target="_blank" style="color:#ccff31">Glossário</a>
+					</button>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>

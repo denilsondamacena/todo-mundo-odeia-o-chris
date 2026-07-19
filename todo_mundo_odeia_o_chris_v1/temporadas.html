@@ -1,0 +1,503 @@
+<!--====================================================================
+  DESENVOLVIDO POR: Denilson Silva Damacena
+  ANO: 2024
+--------------------------------------------------------------------
+⠀⠀⠀⠀⠀⢸⠓⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⠀⠀⠑⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠙⢤⡷⣤⣦⣀⠤⠖⠚⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⡿⠢⢄⡀⠀⡇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠸⠷⣶⠂⠀⠀⠀⣀⣀⠀⠀⠀
+⢸⣃⠀⠀⠉⠳⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⢉⡭⠋
+⠀⠘⣆⠀⠀⠀⠁⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀
+⠀⠀⠘⣦⠆⠀⠀⢀⡎⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⣠⠔⠋⠀⠀⠀⠀
+⠀⠀⠀⡏⠀⠀⣆⠘⣄⠸⢧⠀⠀⠀⠀⢀⣠⠖⢻⠀⠀⠀⣿⢥⣄⣀⣀⣀⠀⠀
+⠀⠀⢸⠁⠀⠀⡏⢣⣌⠙⠚⠀⠀⠠⣖⡛⠀⣠⠏⠀⠀⠀⠇⠀⠀⠀⠀⢙⣣⠄
+⠀⠀⢸⡀⠀⠀⠳⡞⠈⢻⠶⠤⣄⣀⣈⣉⣉⣡⡔⠀⠀⢀⠀⠀⣀⡤⠖⠚⠀⠀
+⠀⠀⡼⣇⠀⠀⠀⠙⠦⣞⡀⠀⢀⡏⠀⢸⣣⠞⠀⠀⠀⡼⠚⠋⠁⠀⠀⠀⠀⠀
+⠀⢰⡇⠙⠀⠀⠀⠀⠀⠀⠉⠙⠚⠒⠚⠉⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢧⡀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⣶⣶⣿⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠀⠀⠀⠙⢿⣳⠞⠳⡄⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠹⣄⣀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+====================================================================-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Todo Mundo Odeia o Chris - Temporadas</title>
+    <link rel="shortcut icon" type="image/png" href="img/todo_mundo_odeia_o_chris_logo.ico" />
+
+    <style>
+        body {
+            background: #ffd42d;
+            font-family: Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h3 {
+            color: #3437f7;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul {
+            font-weight: bold;
+        }
+
+        .cabecalho {
+            background-color: #ffd42d;
+            text-align: center;
+        }
+
+        .cabecalho img {
+            width: 1140px;
+            height: 400px;
+        }
+
+        .bg-amarelo {
+            background-color: #ffd42d;
+        }
+
+        .bg-creme {
+            background-color: #f2e3c9;
+        }
+
+        .foto {
+            background-color: #f2e3c9;
+        }
+
+        #f1 {
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        #f2 {
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        .menu {
+            background-color: #ccff31;
+            color: #3437f7;
+        }
+
+        #m0 {
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        #m5 {
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        .menu-item:hover {
+            background-color: #b6f200;
+        }
+
+        .link_menu {
+            color: #3437f7;
+        }
+
+        .link_menu:hover {
+            font-size: 20px;
+        }
+
+        .imgmenu:hover {
+            height: 37px;
+            width: 67px;
+        }
+
+        .poster {
+            background-color: #f2e3c9;
+            text-align: center;
+        }
+
+        #poster1,
+        #poster3 {
+            border-radius: 20px 0px 0px 0px;
+        }
+
+        .txt {
+            background-color: #f2e3c9;
+            font-size: 15px;
+            padding-right: 70px;
+            padding-top: 20px;
+        }
+
+        #txt2,
+        #txt4 {
+            border-radius: 0px 20px 0px 0px;
+        }
+
+        .lg1,
+        .lg3 {
+            background-color: #f2e3c9;
+            border-radius: 0px 0px 0px 20px;
+        }
+
+        .lg2,
+        .lg4 {
+            background-color: #f2e3c9;
+            border-radius: 0px 0px 20px 0px;
+        }
+
+        .texto-disponivel {
+            color: #3437f7;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .logo:hover {
+            transform: scale(1.2);
+            transition: transform 0.2s ease;
+        }
+
+        .pagina_anterior,
+        .proxima_pagina {
+            background-color: #ccff31;
+            border: none;
+            border-radius: 10px;
+            height: 30px;
+            cursor: pointer;
+            padding: 0 15px;
+        }
+
+        .pagina_anterior:hover,
+        .proxima_pagina:hover {
+            background-color: #b6f200;
+        }
+
+        .btn-container-direita {
+            text-align: right;
+        }
+
+        .rodape-img-container {
+            text-align: center;
+        }
+
+        .rodape-img-container img {
+            width: 1300px;
+            height: 400px;
+        }
+
+        .rodape1 {
+            background-color: #ccff31;
+            height: 30px;
+            border-radius: 20px 0px 0px 20px;
+            color: #3437f7;
+            font-size: 20px;
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .rodape2 {
+            background-color: #ccff31;
+            height: 100px;
+            border-radius: 0px 20px 20px 0px;
+            padding-left: 15px;
+        }
+
+        .glossario {
+            background-color: #3437f7;
+            border: none;
+            border-radius: 10px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        .glossario a {
+            color: #ccff31;
+        }
+
+        .glossario:hover {
+            background-color: #5356f5;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #ffd42d;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            background: #ffd42d;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ccff31;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr>
+                <td class="cabecalho" colspan="8">
+                    <a href="index.html" target="_self">
+                        <img src="img/cabecalho.png" alt="cabeçalho: poster todo mundo odeia o chris" />
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <th class="menu" id="m0" width="1%">&nbsp;</th>
+                <th colspan="2" class="menu menu-item" width="23%">
+                    <a href="index.html" target="_self">
+                        <img class="imgmenu" src="img/todo_mundo_odeia_o_chris_logo.png" height="35px" width="65px"
+                            alt="todo mundo odeia o chris logo" />
+                    </a>
+                </th>
+                <th class="menu menu-item" width="23%">
+                    <a class="link_menu" href="personagens.html" target="_self">PERSONAGENS</a>
+                </th>
+                <th class="menu menu-item" width="23%">
+                    <a class="link_menu" href="temporadas.html" target="_self">TEMPORADAS</a>
+                </th>
+                <th class="menu menu-item" colspan="2" width="23%">
+                    <a class="link_menu" href="contato.html" target="_self">CONTATO</a>
+                </th>
+                <th class="menu" id="m5" width="1%">&nbsp;</th>
+            </tr>
+
+            <tr>
+                <td rowspan="10" class="bg-amarelo">&nbsp;</td>
+                <td colspan="6" class="bg-amarelo">&nbsp;</td>
+                <td rowspan="10" class="bg-amarelo">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td class="foto" id="f1" colspan="3">
+                    <img src="img/temporadas.png" height="120px" width="520px" style="float: right;"
+                        alt="palavra temporada" />
+                </td>
+                <td class="foto" id="f2" colspan="3" style="text-align: center;">
+                    <img src="img/foto_chris.png" height="320px" width="370px" alt="Chris" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6" class="bg-amarelo">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="poster" id="poster1">
+                    <img src="img/temporada1.png" height="400px" width="300px" alt="poster temporada 1" /><br />
+                    <span style="font-size: 12px;"><b>Imagem: </b><a
+                            href="https://www.amazon.com/Everybody-Hates-Chris-1st-Season/dp/B000HA4WOS" target="_blank"
+                            style="color:#3437f7">Amazon</a></span>
+                </td>
+                <td class="txt" id="txt1" valign="top">
+                    <h3>Temporada 1</h3>
+                    <p>Chris (Tyler James Williams) começa a estudar em uma escola predominantemente branca para agradar
+                        sua mãe, Rochelle (Tichina Arnold), que deseja que o filho tenha uma educação melhor. Mas ser o
+                        único aluno negro do colégio não é nada fácil. Pelo menos, ele pode contar com a companhia de
+                        Greg (Vincent Martella), um menino que vira seu melhor amigo.</p>
+                    <ul>
+                        <li>22 episódios</li>
+                        <li>Canal original: UPN</li>
+                        <li>Exibida desde: 22 de setembro de 2005</li>
+                    </ul>
+                    <br />
+                    <span style="font-size: 12px;"><b>Fonte: </b><a
+                            href="https://www.adorocinema.com/series/serie-458/temporada-1086/" target="_blank"
+                            style="color:#3437f7">AdoroCinema</a></span>
+                </td>
+
+                <td class="poster">
+                    <img src="img/temporada2.png" height="400px" width="300px" alt="poster temporada 2" /><br />
+                    <span style="font-size: 12px;"><b>Imagem: </b><a
+                            href="https://www.amazon.com.br/Everybody-Hates-Chris-Season-2/dp/B000SO7PCO"
+                            target="_blank" style="color:#3437f7">Amazon</a></span>
+                </td>
+                <td colspan="2" class="txt" id="txt2" valign="top">
+                    <h3>Temporada 2</h3>
+                    <p>Quando Keisha (Aree Davis) se muda do bairro, outra garota passa a chamar a atenção de Chris
+                        (Tyler James Williams), que decide convidá-la para um encontro. Julius (Terry Crews) descobre
+                        que sofre de pressão alta e tenta reduzir a quantidade de estresse em sua vida. Enquanto isso,
+                        Chris começa sua campanha para concorrer à presidência da oitava série contra Caruso (Travis T.
+                        Flory).</p>
+                    <ul>
+                        <li>22 episódios</li>
+                        <li>Canal original: UPN</li>
+                        <li>Exibida desde: 1 de outubro de 2006</li>
+                    </ul>
+                    <br />
+                    <span style="font-size: 12px;"><b>Fonte: </b><a
+                            href="https://www.adorocinema.com/series/serie-458/temporada-4950/" target="_blank"
+                            style="color:#3437f7">AdoroCinema</a></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="lg1" colspan="2">
+                    <div class="texto-disponivel">Disponível:</div>
+                </td>
+                <td class="bg-creme">
+                    <a href="https://globoplay.globo.com/todo-mundo-odeia-o-chris/t/tDyxRKNSFp/" target="_blank"><img
+                            class="logo" src="img/globoplay_logo.png" height="30px" width="30px"
+                            alt="GloboPlay logo" /></a>&ensp;
+                    <a href="https://www.primevideo.com/detail/0MNPC817E95KMLGF4G38DXN1KB/ref=atv_dp_season_select_s1"
+                        target="_blank"><img class="logo" src="img/primevideo_logo.png" height="30px" width="30px"
+                            alt="Prime Video logo" /></a>&ensp;
+                    <a href="https://www.paramountplus.com/br/shows/everybody_hates_chris/" target="_blank"><img
+                            class="logo" src="img/paramount_logo.png" height="30px" width="30px"
+                            alt="Paramount logo" /></a>
+                </td>
+                <td class="bg-creme">
+                    <div class="texto-disponivel">Disponível:</div>
+                </td>
+                <td class="lg2" colspan="2">
+                    <a href="https://globoplay.globo.com/todo-mundo-odeia-o-chris/t/tDyxRKNSFp/temporadas/2/"
+                        target="_blank"><img class="logo" src="img/globoplay_logo.png" height="30px" width="30px"
+                            alt="GloboPlay logo" /></a>&ensp;
+                    <a href="https://www.primevideo.com/detail/0SGKIQTPQ3KMS0E2WXWZEB1F7H/ref=atv_dp_season_select_s2"
+                        target="_blank"><img class="logo" src="img/primevideo_logo.png" height="30px" width="30px"
+                            alt="Prime Video logo" /></a>&ensp;
+                    <a href="https://www.paramountplus.com/br/shows/everybody_hates_chris/" target="_blank"><img
+                            class="logo" src="img/paramount_logo.png" height="30px" width="30px"
+                            alt="Paramount logo" /></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6" class="bg-amarelo">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="poster" id="poster3">
+                    <img src="img/temporada3.png" height="400px" width="300px" alt="poster temporada 3" /><br />
+                    <span style="font-size: 12px;"><b>Imagem: </b><a
+                            href="https://www.amazon.com.br/Everybody-Hates-Chris-Season-3/dp/B0019F02WG"
+                            target="_blank" style="color:#3437f7">Amazon</a></span>
+                </td>
+                <td class="txt" id="txt3" valign="top">
+                    <h3>Temporada 3</h3>
+                    <p>Julius (Terry Crews) aceita um trabalho extra durante o período que deveria estar de férias.
+                        Rochelle (Tichina Arnold) decide fazer campanha para Lamar Johnson, um candidato a vereador
+                        muito espertalhão. Chris (Tyler James Williams) se anima com a notícia de que outro garoto negro
+                        vai estudar na escola, mas Greg (Vincent Martella) fica com ciúmes.</p>
+                    <ul>
+                        <li>22 episódios</li>
+                        <li>Canal original: UPN</li>
+                        <li>Exibida desde: 1 de outubro de 2007</li>
+                    </ul>
+                    <span style="font-size: 12px;"><b>Fonte: </b><a
+                            href="https://www.adorocinema.com/series/serie-458/temporada-5659/" target="_blank"
+                            style="color:#3437f7">AdoroCinema</a></span>
+                </td>
+
+                <td class="poster">
+                    <img src="img/temporada4.png" height="400px" width="300px" alt="poster temporada 4" /><br />
+                    <span style="font-size: 12px;"><b>Imagem: </b><a
+                            href="https://www.amazon.com/Everybody-Hates-Chris-Fourth-Season/dp/B01M9IEHGY"
+                            target="_blank" style="color:#3437f7">Amazon</a></span>
+                </td>
+                <td colspan="2" class="txt" id="txt4" valign="top">
+                    <h3>Temporada 4</h3>
+                    <p>Já no ensino médio, Chris (Tyler James Williams) decide dirigir um carro, mas, acidentalmente,
+                        acaba atropelando Greg (Vincent Martella), que fica com a perna quebrada e vai parar no
+                        hospital. Tonya (Imani Hakim) começa a trabalhar em um salão de beleza, mas sua sinceridade com
+                        as clientes acaba colocando ela em maus lençóis. Rochelle (Tichina Arnold) tenta ajudar Peaches
+                        (Tisha Campbell-Martin) a mudar de vida.</p>
+                    <ul>
+                        <li>22 episódios</li>
+                        <li>Canal original: UPN</li>
+                        <li>Exibida desde: 3 de outubro de 2008</li>
+                    </ul>
+                    <span style="font-size: 12px;"><b>Fonte: </b><a
+                            href="https://www.adorocinema.com/series/serie-458/temporada-7323/" target="_blank"
+                            style="color:#3437f7">AdoroCinema</a></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="lg3" colspan="2">
+                    <div class="texto-disponivel">Disponível:</div>
+                </td>
+                <td class="bg-creme">
+                    <a href="https://globoplay.globo.com/todo-mundo-odeia-o-chris/t/tDyxRKNSFp/temporadas/3/"
+                        target="_blank"><img class="logo" src="img/globoplay_logo.png" height="30px" width="30px"
+                            alt="GloboPlay logo" /></a>&ensp;
+                    <a href="https://www.primevideo.com/detail/0HG5F7AFX5RKU55CFHN025V5CF/ref=atv_dp_season_select_s3"
+                        target="_blank"><img class="logo" src="img/primevideo_logo.png" height="30px" width="30px"
+                            alt="Prime Video logo" /></a>&ensp;
+                    <a href="https://www.paramountplus.com/br/shows/everybody_hates_chris/" target="_blank"><img
+                            class="logo" src="img/paramount_logo.png" height="30px" width="30px"
+                            alt="Paramount logo" /></a>
+                </td>
+                <td class="bg-creme">
+                    <div class="texto-disponivel">Disponível:</div>
+                </td>
+                <td class="lg4" colspan="2">
+                    <a href="https://globoplay.globo.com/todo-mundo-odeia-o-chris/t/tDyxRKNSFp/temporadas/4/"
+                        target="_blank"><img class="logo" src="img/globoplay_logo.png" height="30px" width="30px"
+                            alt="GloboPlay logo" /></a>&ensp;
+                    <a href="https://www.primevideo.com/detail/0TRGI0JJI4SVUVKJQCGV4RY1HG/ref=atv_dp_season_select_s4"
+                        target="_blank"><img class="logo" src="img/primevideo_logo.png" height="30px" width="30px"
+                            alt="Prime Video logo" /></a>&ensp;
+                    <a href="https://www.paramountplus.com/br/shows/everybody_hates_chris/" target="_blank"><img
+                            class="logo" src="img/paramount_logo.png" height="30px" width="30px"
+                            alt="Paramount logo" /></a>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6" class="bg-amarelo">&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="bg-amarelo">
+                    <button class="pagina_anterior">
+                        <a href="personagens.html" target="_self" style="color:#3437f7">página anterior</a>
+                    </button>
+                </td>
+                <td class="bg-amarelo" width="316px">&nbsp;</td>
+                <td class="bg-amarelo" width="316px">&nbsp;</td>
+                <td colspan="2" class="bg-amarelo">
+                    <div class="btn-container-direita">
+                        <button class="proxima_pagina">
+                            <a href="contato.html" target="_self" style="color:#3437f7">próxima página</a>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="8" class="rodape-img-container">
+                    <img src="img/rodape.png" alt="rodapé: familia de chris rock" />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="rodape1" colspan="4"><b>REDES SOCIAIS</b></td>
+                <td class="rodape2" colspan="4">
+                    <br />
+                    <a href="https://www.facebook.com/chrissinceroh/" target="_blank"><img src="img/facebook.png"
+                            height="30px" width="30px" alt="facebook logo" /></a>&ensp;
+                    <a href="https://twitter.com/chrissinceroh" target="_blank"><img src="img/twitter.png" height="30px"
+                            width="30px" alt="twitter logo" /></a>&ensp;
+                    <a href="https://www.instagram.com/chrissinceroh/" target="_blank"><img src="img/instagram.png"
+                            height="30px" width="30px" alt="instagram logo" /></a>&ensp;
+                    <a href="https://www.tiktok.com/@chrissinceroh" target="_blank"><img src="img/tiktok.png"
+                            height="30px" width="30px" alt="tiktok logo" /></a>&ensp;
+                    <a href="https://www.youtube.com/@chrissinceroh" target="_blank"><img src="img/youtube.png"
+                            height="30px" width="30px" alt="youtube logo" /></a>
+                    <br /><br />
+                    <button class="glossario">
+                        <a href="glossario.html" target="_blank">Glossário</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

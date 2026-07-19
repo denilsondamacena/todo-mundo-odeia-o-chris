@@ -1,0 +1,578 @@
+<!--====================================================================
+  DESENVOLVIDO POR: Denilson Silva Damacena
+  ANO: 2024
+--------------------------------------------------------------------
+⠀⠀⠀⠀⠀⢸⠓⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⠀⠀⠑⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠙⢤⡷⣤⣦⣀⠤⠖⠚⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⡿⠢⢄⡀⠀⡇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠸⠷⣶⠂⠀⠀⠀⣀⣀⠀⠀⠀
+⢸⣃⠀⠀⠉⠳⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⢉⡭⠋
+⠀⠘⣆⠀⠀⠀⠁⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀
+⠀⠀⠘⣦⠆⠀⠀⢀⡎⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⣠⠔⠋⠀⠀⠀⠀
+⠀⠀⠀⡏⠀⠀⣆⠘⣄⠸⢧⠀⠀⠀⠀⢀⣠⠖⢻⠀⠀⠀⣿⢥⣄⣀⣀⣀⠀⠀
+⠀⠀⢸⠁⠀⠀⡏⢣⣌⠙⠚⠀⠀⠠⣖⡛⠀⣠⠏⠀⠀⠀⠇⠀⠀⠀⠀⢙⣣⠄
+⠀⠀⢸⡀⠀⠀⠳⡞⠈⢻⠶⠤⣄⣀⣈⣉⣉⣡⡔⠀⠀⢀⠀⠀⣀⡤⠖⠚⠀⠀
+⠀⠀⡼⣇⠀⠀⠀⠙⠦⣞⡀⠀⢀⡏⠀⢸⣣⠞⠀⠀⠀⡼⠚⠋⠁⠀⠀⠀⠀⠀
+⠀⢰⡇⠙⠀⠀⠀⠀⠀⠀⠉⠙⠚⠒⠚⠉⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢧⡀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⣶⣶⣿⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠀⠀⠀⠙⢿⣳⠞⠳⡄⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠹⣄⣀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+====================================================================-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Todo Mundo Odeia o Chris - Personagens</title>
+	<link rel="shortcut icon" type="image/png" href="img/todo_mundo_odeia_o_chris_logo.ico" />
+
+	<style>
+		body {
+			background: #ffd42d;
+			font-family: Helvetica, Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		h2 {
+			color: #3437f7;
+			font-size: 20px;
+			padding-left: 30px;
+		}
+
+		ol {
+			font-size: 18px;
+		}
+
+		p {
+			margin: 20px;
+			font-size: 18px;
+		}
+
+		.cabecalho {
+			background-color: #ffd42d;
+			text-align: center;
+		}
+
+		.cabecalho img {
+			width: 1140px;
+			height: 400px;
+		}
+
+		.bg-amarelo {
+			background-color: #ffd42d;
+		}
+
+		.foto {
+			background-color: #f2e3c9;
+		}
+
+		#f1 {
+			border-radius: 20px 0px 0px 20px;
+			text-align: right;
+		}
+
+		#f2 {
+			border-radius: 0px 20px 20px 0px;
+		}
+
+		.menu {
+			background-color: #ccff31;
+			color: #3437f7;
+		}
+
+		#m0 {
+			border-radius: 20px 0px 0px 20px;
+		}
+
+		#m5 {
+			border-radius: 0px 20px 20px 0px;
+		}
+
+		.menu-item:hover {
+			background-color: #b6f200;
+		}
+
+		.link_menu {
+			color: #3437f7;
+		}
+
+		.link_menu:hover {
+			font-size: 20px;
+		}
+
+		.imgmenu:hover {
+			height: 37px;
+			width: 67px;
+		}
+
+		.lista {
+			padding-left: 30px;
+			background-color: #f2e3c9;
+			border-radius: 20px 0px 0px 20px;
+		}
+
+		.perso {
+			background-color: #f2e3c9;
+			text-align: center;
+			vertical-align: top;
+			padding-top: 30px;
+		}
+
+		.txt {
+			background-color: #f2e3c9;
+			padding-right: 30px;
+			text-align: justify;
+			font-size: 18px;
+			vertical-align: top;
+		}
+
+		#txt1 {
+			padding-top: 30px;
+			border-radius: 0px 20px 0px 0px;
+		}
+
+		#tborda2 {
+			border-radius: 0px 0px 20px 0px;
+		}
+
+		.fonte1 {
+			margin: 20px;
+		}
+
+		.fonte-container {
+			text-align: right;
+			font-size: 12px;
+		}
+
+		.imgan {
+			padding-bottom: 20px;
+			transition: transform 0.3s ease;
+		}
+
+		.imgan:hover {
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+		}
+
+		.pagina_anterior,
+		.proxima_pagina {
+			background-color: #ccff31;
+			border: none;
+			border-radius: 10px;
+			height: 30px;
+			cursor: pointer;
+			padding: 0 15px;
+		}
+
+		.pagina_anterior:hover,
+		.proxima_pagina:hover {
+			background-color: #b6f200;
+		}
+
+		.btn-container-direita {
+			text-align: right;
+		}
+
+		.rodape-img-container {
+			text-align: center;
+		}
+
+		.rodape-img-container img {
+			width: 1300px;
+			height: 400px;
+		}
+
+		.rodape1 {
+			background-color: #ccff31;
+			height: 30px;
+			border-radius: 20px 0px 0px 20px;
+			color: #3437f7;
+			font-size: 20px;
+			text-align: right;
+			padding-right: 15px;
+		}
+
+		.rodape2 {
+			background-color: #ccff31;
+			height: 100px;
+			border-radius: 0px 20px 20px 0px;
+			padding-left: 15px;
+		}
+
+		.glossario {
+			background-color: #3437f7;
+			border: none;
+			border-radius: 10px;
+			height: 30px;
+			cursor: pointer;
+		}
+
+		.glossario a {
+			color: #ccff31;
+		}
+
+		.glossario:hover {
+			background-color: #5356f5;
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: #ffd42d;
+		}
+
+		::-webkit-scrollbar {
+			width: 10px;
+			background: #ffd42d;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: #ccff31;
+			border-radius: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+		<table width="100%" border="0" cellpadding="5" cellspacing="0">
+			<tr>
+				<td class="cabecalho" colspan="8">
+					<a href="index.html" target="_self">
+						<img src="img/cabecalho.png" alt="cabeçalho: poster todo mundo odeia o chris" />
+					</a>
+				</td>
+			</tr>
+
+			<tr>
+				<th class="menu" id="m0" width="3%">&nbsp;</th>
+				<th colspan="2" class="menu menu-item" width="23%">
+					<a href="index.html" target="_self">
+						<img class="imgmenu" src="img/todo_mundo_odeia_o_chris_logo.png" height="35px" width="65px"
+							alt="todo mundo odeia o chris logo" />
+					</a>
+				</th>
+				<th class="menu menu-item" width="23%">
+					<a class="link_menu" href="personagens.html" target="_self">PERSONAGENS</a>
+				</th>
+				<th class="menu menu-item" width="23%">
+					<a class="link_menu" href="temporadas.html" target="_self">TEMPORADAS</a>
+				</th>
+				<th class="menu menu-item" colspan="2" width="23%">
+					<a class="link_menu" href="contato.html" target="_self">CONTATO</a>
+				</th>
+				<th class="menu" id="m5" width="3%">&nbsp;</th>
+			</tr>
+
+			<tr>
+				<td rowspan="22" class="bg-amarelo">&nbsp;</td>
+				<td colspan="6" class="bg-amarelo">&nbsp;</td>
+				<td rowspan="22" class="bg-amarelo">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="foto" id="f1" colspan="3">
+					<img src="img/personagens.png" height="280px" width="520px" alt="elenco da série" />
+				</td>
+				<td class="foto" id="f2" colspan="3">
+					<img src="img/texto_personagens.png" height="80px" width="520px" alt="palavra personagens" />
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="6" class="bg-amarelo">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="lista" colspan="2" valign="top" rowspan="17">
+					<br />
+					<h2>Personagens principais:</h2>
+					<ol type="1" start="1">
+						<li>Chris Rock</li>
+						<li>Julius Rock</li>
+						<li>Rochelle Rock</li>
+						<li>Tonya Rock</li>
+						<li>Drew Rock</li>
+						<li>Gregory "Greg" Wuliger</li>
+					</ol>
+					<br /><br />
+					<h2>Personagens secundários:</h2>
+					<ol type="1" start="7">
+						<li>Joey Caruso</li>
+						<li>Senhorita Morello</li>
+						<li>Senhor Omar</li>
+						<li>Perigo (Risky no original inglês)</li>
+						<li>Doc</li>
+						<li>Professor Thurman</li>
+						<li>Jerome</li>
+						<li>Louis</li>
+						<li>Tasha</li>
+						<li>Vanessa</li>
+						<li>Golpe Baixo (Kill Moves no original inglês)</li>
+						<li>Monk</li>
+						<li>Malvo</li>
+					</ol>
+					<br /><br />
+					<h2>Participações Especiais:</h2>
+					<ol type="1" start="20">
+						<li>Tisha Campbell Martin</li>
+						<li>Whoopi Goldberg</li>
+						<li>Earthquake</li>
+						<li>Jazz Raycole</li>
+						<li>Jason Alexander</li>
+						<li>Jimmie Walker</li>
+						<li>Loretta Devine</li>
+						<li>Chris Rock</li>
+						<li>Tony Rock</li>
+					</ol>
+					<br /><br />
+					<blockquote class="tiktok-embed"
+						cite="https://www.tiktok.com/@teoriacinematografica/video/7195509517000527109"
+						data-video-id="7195509517000527109" style="max-width: 200px; min-width: 325px;">
+						<section>
+							<a target="_blank" title="@teoriacinematografica"
+								href="https://www.tiktok.com/@teoriacinematografica?refer=embed">@teoriacinematografica</a>
+							<a target="_blank" title="♬ som original - Teoria Cinematográfica"
+								href="https://www.tiktok.com/music/som-original-7195509511859604230?refer=embed">♬ som
+								original - Teoria Cinematográfica</a>
+						</section>
+					</blockquote>
+					<script async src="https://www.tiktok.com/embed.js"></script>
+				</td>
+
+				<td class="perso"><img class="imgan" src="img/chris_rock.png" height="150px" width="150px"
+						alt="Chris Rock" /></td>
+				<td class="txt" id="txt1" colspan="3">
+					<font color="#3437f7"><b>Chris (Chris Rock):</b></font>
+					<p>O protagonista e o personagem mais infeliz e azarado da série. O único negro da escola onde
+						estuda, além de ser filho mais velho de Julius e Rochelle. Ele deseja ser bonito, talentoso,
+						popular, ou qualquer outra coisa positiva, mas não consegue realizar seus desejos. Por vezes, é
+						confundido com o cantor Lionel Richie. Quase sempre se dá mal nos episódios. Trabalha na
+						mercearia do Doc a partir da 2ª temporada.</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bg-creme">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="perso"><img class="imgan" src="img/julius_rock.png" height="150px" width="150px"
+						alt="Julius Rock" /></td>
+				<td class="txt" colspan="3">
+					<font color="#3437f7"><b>Julius Rock:</b></font>
+					<p>O pai de Chris. É um dos poucos pais de família do bairro. Julius é o filho mais velho de quinze
+						irmãos, por isso teve de aprender um pouco de tudo. É um homem super trabalhador (trabalha tanto
+						que quase não tem tempo para dormir, sendo essa sua principal queixa). Além de trabalhar em dois
+						empregos (é entregador de jornais e segurança), ainda faz hora extra, tudo para dar uma melhor
+						qualidade de vida à sua família, em detrimento da sua própria saúde (na vida real, Julius morreu
+						em consequência de uma cirurgia para tratar de uma úlcera aguda no estômago em 1988, sendo um
+						dos fortes motivos para que a série não continuasse). E por trabalhar tanto pelo sustento da
+						família, sabe dar valor a cada centavo que gasta, muitas vezes chegando a ser um verdadeiro
+						“mão-de-vaca“. Sabe exatamente o valor de tudo (ex.: Você está gastando três dólares e oitenta e
+						cinco centavos de eletricidade abrindo a geladeira). Nunca teve um caso extraconjugal. Quando
+						Rochelle (sua mulher) briga com ele, quase sempre Julius está certo, mas ele prefere se calar e,
+						ainda depois, pedir desculpas. Está sempre dando conselhos que são verdadeiras lições de vida a
+						seus filhos, principalmente para o Chris. Além de gostar de telenovelas, tem uma excentricidade:
+						fobia enorme de coelhos. Vive protegendo sua filha Tonya, muitas vezes deixando impune os erros
+						cometidos por ela.</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bg-creme">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="perso"><img class="imgan" src="img/rochelle_rock.png" height="150px" width="150px"
+						alt="Rochelle Rock" /></td>
+				<td class="txt" colspan="3">
+					<font color="#3437f7"><b>Rochelle Rock:</b></font>
+					<p>A mãe de Chris. Mulher que age como uma espécie de ditadora perante a família. Vive quase a todo
+						momento mandando em seu marido, gritando com a família inteira e batendo nos filhos. Para ela,
+						gritar é normal, tanto que ela já fala como se quisesse gritar. Nunca gostou de trabalhar.
+						Quando conseguia emprego, fazia questão de não mantê-lo, dizendo sempre seu jargão preferido “Eu
+						não preciso disso, meu marido tem DOIS empregos!”. É extremamente rígida com o Chris e está
+						sempre mandando ele fazer alguma coisa: arrumar a casa, lavar a louça, limpar a mesa, etc. É uma
+						mãe preocupada com a educação dos filhos. Por ser uma mulher muito soberba, ela matricula seu
+						filho Chris em uma escola de brancos que fica muito distante de sua casa, achando ela que, por
+						ser escola de brancos, o Chris terá uma boa educação.</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bg-creme">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="perso"><img class="imgan" src="img/tonya_rock.png" height="150px" width="150px"
+						alt="Tonya Rock" /></td>
+				<td class="txt" colspan="3">
+					<font color="#3437f7"><b>Tonya Rock:</b></font>
+					<p>A irmã mais nova de Chris. Como a mais jovem e também a única filha, ela é capaz de conseguir
+						qualquer coisa através de choros, gritos, chantagens e mentiras (normalmente sendo acobertada
+						por Julius e colocando em Chris e Drew a culpa de suas más ações).</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bg-creme">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="perso"><img class="imgan" src="img/drew_rock.png" height="150px" width="150px"
+						alt="Drew Rock" /></td>
+				<td class="txt" colspan="3">
+					<font color="#3437f7"><b>Drew Rock:</b></font>
+					<p>O filho do meio que parece ser o mais velho, em comparação com a altura, Drew é um pouco mais
+						alto que Chris. Além de ser o personagem mais sortudo da série, ele pode muito bem atrair todas
+						as meninas que Chris tem paixões. Sempre que Chris está em perigo, Drew está sempre lá para
+						deixar Chris saber o quão profundo ele está em apuros. Drew é baseado na vida real dos irmãos
+						Tony e Andrew Rock. Tequan Richmond, ator que interpreta Drew, havia se inscrito na audição para
+						o papel de Chris, porém os produtores preferiram dar-lhe o papel de Andrew, principalmente pelo
+						aspect físico.</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bg-creme">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="perso"><img class="imgan" src="img/greg_wuliger.png" height="150px" width="150px"
+						alt="Greg Wuliger" /></td>
+				<td class="txt" colspan="3">
+					<font color="#3437f7"><b>Greg Wuliger:</b></font>
+					<p>Garoto branco, ítalo-americano, nerd e conselheiro, melhor amigo e o único que gosta de Chris,
+						pelo qual é normalmente visto dando conselhos à ele. Se há uma pessoa que está ali para ajudar
+						Chris, é Greg.</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bg-creme">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="perso"><img class="imgan" src="img/joey_caruso.png" height="150px" width="150px"
+						alt="Joey Caruso" /></td>
+				<td class="txt" colspan="3">
+					<font color="#3437f7"><b>Joey Caruso:</b></font>
+					<p>Garoto ruivo que estuda com Chris. É racista, mal-educado, briguento, falso e dissimulado, e está
+						sempre acompanhado de outros garotos, com os quais dá surras diárias em seus desafetos
+						(ironicamente, Caruso é baixo e gordo, semelhante a vários desses mesmos desafetos). Nunca chama
+						Chris pelo nome, mas só por apelidos racistas. Interpretado por Travis Flory.</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bg-creme">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="perso"><img class="imgan" src="img/morello.png" height="150px" width="150px"
+						alt="Senhorita Morello" /></td>
+				<td class="txt" colspan="3">
+					<font color="#3437f7"><b>Senhorita Morello:</b></font>
+					<p>Professora de Chris. Nascida no Texas, ela demonstra gostar bastante dele, mas muitas vezes, sem
+						querer, faz declarações inconvenientes e racistas, como achar que Chris tem muitos irmãos, que
+						sua família passa necessidades, que sua mãe usa drogas e não conhece os vários pais de Chris e
+						dos irmãos, etc. Aparte isso, ela também aparenta ser uma verdadeira aficcionada por
+						estereótipos sobre negros (muitas vezes, referentes ao próprio Chris). Interpretada por
+						Jacqueline Mazarella.</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="bg-creme">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td class="perso"><img class="imgan" src="img/omar.png" height="150px" width="150px"
+						alt="Senhor Omar" /></td>
+				<td class="txt" id="tborda2" colspan="3">
+					<font color="#3437f7"><b>Senhor Omar:</b></font>
+					<p>Corretor funerário mulherengo, que se aproveita da solidão das viúvas para flertar com elas,
+						seduzi-las e ficar com elas por um tempo. É inquilino da família de Chris, morando no
+						apartamento logo acima dos Rock e pagando o aluguel a Julius. Interpretado por Ernest Lee
+						Thomas, é conhecido pelo seu bordão “Trágico, trágico!”.</p>
+					<div class="fonte-container"><i>(<b>Fonte:</b> <a
+								href="https://todomundoodeiachris.wordpress.com/historia-e-personagens/" target="_blank"
+								style="color:#3437f7">WordPress</a>)</i></div>
+					<br />
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="6" class="bg-amarelo">&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" class="bg-amarelo">
+					<button class="pagina_anterior">
+						<a href="index.html" target="_self" style="color:#3437f7">página anterior</a>
+					</button>
+				</td>
+				<td class="bg-amarelo">&nbsp;</td>
+				<td class="bg-amarelo">&nbsp;</td>
+				<td colspan="2" class="bg-amarelo">
+					<div class="btn-container-direita">
+						<button class="proxima_pagina">
+							<a href="temporadas.html" target="_self" style="color:#3437f7">próxima página</a>
+						</button>
+					</div>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="8" class="rodape-img-container">
+					<img src="img/rodape.png" alt="rodapé: familia de chris rock" />
+				</td>
+			</tr>
+
+			<tr>
+				<td class="rodape1" colspan="4"><b>REDES SOCIAIS</b></td>
+				<td class="rodape2" colspan="4">
+					<br />
+					<a href="https://www.facebook.com/chrissinceroh/" target="_blank"><img src="img/facebook.png"
+							height="30px" width="30px" alt="facebook logo" /></a>&ensp;
+					<a href="https://twitter.com/chrissinceroh" target="_blank"><img src="img/twitter.png" height="30px"
+							width="30px" alt="twitter logo" /></a>&ensp;
+					<a href="https://www.instagram.com/chrissinceroh/" target="_blank"><img src="img/instagram.png"
+							height="30px" width="30px" alt="instagram logo" /></a>&ensp;
+					<a href="https://www.tiktok.com/@chrissinceroh" target="_blank"><img src="img/tiktok.png"
+							height="30px" width="30px" alt="tiktok logo" /></a>&ensp;
+					<a href="https://www.youtube.com/@chrissinceroh" target="_blank"><img src="img/youtube.png"
+							height="30px" width="30px" alt="youtube logo" /></a>
+					<br /><br />
+					<button class="glossario">
+						<a href="glossario.html" target="_blank">Glossário</a>
+					</button>
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+
+</html>
