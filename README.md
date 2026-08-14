@@ -45,31 +45,36 @@ Este diretório central funciona como um índice e laboratório de evolução de
 ```
 ---
 
-## Como executar os projetos
-Cada versão possui requisitos distintos de execução devido à evolução da arquitetura do back-end:
+## Como Executar o Projeto
 
-### Executando a Versão 1 (2024)
-Por ser puramente estática, não requer servidores locais:
+Com a criação da página inicial na raiz do repositório, agora é possível navegar facilmente entre as duas versões do projeto.
 
-<ol><li>Acesse a pasta <code>todo_mundo_odeia_o_chris_v1</code>.</li>
+---
 
-<li>Dê um duplo clique no arquivo <code>index.html</code> para abrir diretamente no seu navegador.</li></ol>
+### 1. Execução Online (GitHub Pages)
 
-### Executando a Versão 2 (2026)
-Requer um interpretador PHP ativo na máquina:
+Para acessar o projeto diretamente online, sem precisar instalar nada na sua máquina:
 
-<ol><li>Instale um gerenciador como o <strong>XAMPP</strong> ou <strong>WampServer</strong>.</li>
+1. Acesse ao link principal do projeto:  
+   👉 [todo-mundo-odeia-o-chris no GitHub Pages](https://denilsondamacena.github.io/todo-mundo-odeia-o-chris/)
+2. Na página inicial, escolha a versão que deseja visualizar:
+   * **Acessar versão 1 (2024)** – (`/todo_mundo_odeia_o_chris_v1/`).
+   * **Acessar versão 2 (2026)** –  (`/todo_mundo_odeia_o_chris_v2/`).
 
-<li>Mova a pasta pai inteira (<code>TODO_MUNDO_ODEIA_O_CHRIS</code>) para o diretório de arquivos públicos do seu servidor local (ex: <code>htdocs/</code>).</li>
+---
 
-<li>Certifique-se de que o serviço do Apache/PHP esteja ativo.</li>
+### 2. Execução Local
 
-<li>Acesse os links no navegador:</li>
-<ul>
-<li><strong>Para a v1:</strong> <code>http://localhost/TODO_MUNDO_ODEIA_O_CHRIS/todo_mundo_odeia_o_chris_v1/index.html</code></li>
+#### Executando o Projeto Completo (Recomendado)
+A **Versão 2 (2026)** necessita de um ambiente com suporte a **PHP**. Para ter a experiência completa, incluindo o seletor de versões e o back-end funcionando localmente:
 
-<li><strong>Para a v2:</strong> <code>http://localhost/TODO_MUNDO_ODEIA_O_CHRIS/todo_mundo_odeia_o_chris_v2/index.php</code></li></ul></ol>
-
+1. Inicie um servidor local (ex.: **XAMPP** ou **WampServer**).
+2. Mova a pasta principal do projeto (`todo-mundo-odeia-o-chris`) para o diretório público do seu servidor (ex.: `htdocs/`).
+4. Certifique-se de que os módulos **Apache** e **PHP** estejam ativos no painel de controle.
+5. Acesse, pelo navegador, a página inicial de seleção de versões:
+   ```text
+   http://localhost/todo-mundo-odeia-o-chris/
+   ```
 ---
 
 ## Licença
