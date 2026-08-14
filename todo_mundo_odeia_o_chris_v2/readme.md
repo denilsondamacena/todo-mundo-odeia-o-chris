@@ -56,7 +56,13 @@ Este projeto é a evolução da plataforma enciclopédica sobre a série "Todo M
 📁 TODO_MUNDO_ODEIA_O_CHRIS
 └── 📁 todo_mundo_odeia_o_chris_v2
     ├── 📁 css
-    │   └── 📄 style.css            
+    │   └── 📄 style.css
+    ├── 📁 html-version
+    │   ├── 📄 contato.php             
+    │   ├── 📄 glossario.php            
+    │   ├── 📄 index.php                
+    │   ├── 📄 personagens.php         
+    │   └── 📄 temporadas.php            
     ├── 📁 img                      
     ├── 📁 includes                 
     │   ├── 📄 footer.php
