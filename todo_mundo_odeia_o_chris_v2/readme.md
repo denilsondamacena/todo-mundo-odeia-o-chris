@@ -58,11 +58,11 @@ Este projeto é a evolução da plataforma enciclopédica sobre a série "Todo M
     ├── 📁 css
     │   └── 📄 style.css
     ├── 📁 html-version
-    │   ├── 📄 contato.php             
-    │   ├── 📄 glossario.php            
-    │   ├── 📄 index.php                
-    │   ├── 📄 personagens.php         
-    │   └── 📄 temporadas.php            
+    │   ├── 📄 contato.html             
+    │   ├── 📄 glossario.html            
+    │   ├── 📄 index.html                
+    │   ├── 📄 personagens.html         
+    │   └── 📄 temporadas.html            
     ├── 📁 img                      
     ├── 📁 includes                 
     │   ├── 📄 footer.php
